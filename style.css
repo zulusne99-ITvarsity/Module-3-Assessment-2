@@ -1,0 +1,248 @@
+html{
+    height: 100%;
+}
+
+body{
+    font-family: cursive;
+    
+    margin: 0;
+    padding: 0;
+    
+    height: 100%;
+}
+
+.body-home{
+    background-image: url('images/cover%20img2.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body-meals{
+    background-image: url('images/cover%20img1.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*========== HEADER ==========*/
+
+.header{
+    background-color: forestgreen;
+    
+    width: 100%;
+    height: 50px;
+    top: 0;
+    
+    position: fixed;
+    overflow: hidden;
+    
+    text-align: center;
+}
+
+.header i{
+    float: left;
+    padding: 17px 0px 0px 17px;
+    color: white;    
+}
+
+.header img{
+    width: 200px;
+    padding-top: 14px;
+    padding-right: 25px;
+}
+
+/*========== HOME PAGE ==========*/
+
+#Home-logo-img{
+    width: 200px;
+    display: block;
+    margin: auto;
+    padding-top: 0px;
+}
+
+#Home-logo-text{
+    width: 1000px;
+    display: block;
+    margin: auto;
+    padding: 50px;
+}
+
+/*---------- HOME PAGE MENU ---------*/
+
+.home-menu-item{
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    color: darkgreen;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    border: 5px solid black;
+    
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+/*========== MEALS PAGE ==========*/
+
+#meals{
+    padding-top: 100px;
+}
+
+/*---------- MEALS PAGE MENU ---------*/
+
+.meals-list a{
+   text-decoration: none;
+}
+
+.meals-list-item{
+    border: 5px solid black;
+    margin: 10px;
+}
+
+.meals-list-item h1{
+    font-weight: bold;
+    font-size: 20px;
+    color: forestgreen;
+    padding-left: 10px;
+}
+
+.meals-list-item i{
+    float: right;
+    color: forestgreen;
+    padding-right: 10px;
+}
+
+.meals-list-item p{
+    font-size: 15px;
+    font-style: italic;
+    color: black;
+    margin-top: -7px;
+    padding-left: 10px;
+}
+
+/*========== RECIPE PAGE ==========*/
+#recipe{
+    padding-top: 50px;
+}
+
+/*---------- RECIPE DETAILS ---------*/
+
+.recipe-details img{
+   width: 100%;
+}
+
+.recipe-details h1{
+    font-size: 25px;
+    color: forestgreen;
+    text-align: center;
+    border: 5px solid #1a1a1a;
+    margin: 10px;
+    padding: 5px;
+}
+
+.recipe-details h2{
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.recipe-details-info{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.recipe-details-info p{
+    font-size: 15px;
+    display: inline-block;
+}
+
+.recipe-details-info b{
+    color: forestgreen;
+}
+
+.recipe-details-info label{
+    font-size: 15px;
+}
+
+.recipe-details-info img{
+    width: 120px;
+}
+
+/*========== ORDER PAGE ==========*/
+
+#order-received h2{
+    color: forestgreen;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;   
+}
+
+#order-received h3{
+    font-weight: 600;
+    font-size: 30px;
+    color: darkgreen;
+    text-align: center;
+}
+
+#order-received img{
+    margin-left: 280px; 
+    padding-left: 280px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+
+/*========== RESPONSIVE LAYOUT ==========*/
+
+@media only screen and (min-width:600px){
+    #meals{
+        width: 80%;
+        margin: auto;
+    }
+   
+    #recipe{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width:1000px){
+    #meals{
+        width: 60%;
+        margin: auto;
+    }
+    
+    #recipe{
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width:1500px){
+    #meals{
+        width: 40%;
+        margin: auto;
+    }
+    
+    #recipe{
+        width: 40%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width:720px){
+    .body-home{
+        background-image: url('images/cover%20img1.jpg');
+    }
+    
+    .body-meals{
+       background-image: url('images/cover%20img2.jpg');
+    }
+}
